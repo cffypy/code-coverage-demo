@@ -1,13 +1,13 @@
-package org.example.codecoveragedemo;
+package org.example.codecoveragedemo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
+public class JacocoController {
 
 
-    @GetMapping("/test")
+    @GetMapping("/j1")
     public String testJacoco() {
         int a = 0;
         int b = 0;
@@ -18,11 +18,11 @@ public class TestController {
             b = 2;
         }
         c = b + 1;
-        System.out.println("c = " + c);
+        System.out.println("j1 = " + c);
         return "testJacoco";
     }
 
-    @GetMapping("/test2")
+    @GetMapping("/j2")
     public String testJacoco2() {
         int a = 0;
         int b = 0;
@@ -33,7 +33,7 @@ public class TestController {
             b = 2;
         }
         c = b + 1;
-        System.out.println("c = " + c);
+        System.out.println("j2 = " + c);
         return "testJacoco";
     }
 }
