@@ -19,6 +19,21 @@ public class JacocoController {
         }
         c = b + 1;
         System.out.println("j1 = " + c);
-        return "testJacoco";
+        return "testJacoco1";
+    }
+
+    @GetMapping("/j2")
+    public String testJacoco2() {
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        if (a == 0) {
+            b = 1;
+        } else {
+            b = 2;
+        }
+        c = b + 1;
+        System.out.println("j2 = " + c);
+        return "testJacoco2";
     }
 }
